@@ -6,12 +6,14 @@
   <title>Portfolio - Emryc Humeau</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header class="site-header">
     <nav>
       <ul>
         <li><a href="#apropos">À propos</a></li>
         <li><a href="#competences">Compétences</a></li>
+        <li><a href="#langues">Langues</a></li>
         <li><a href="#projets">Projets</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -22,116 +24,147 @@
     <div class="intro-text">
       <p>Bonjour, je suis <strong>Emryc Humeau</strong>, étudiant en BUT Informatique à l'Université Sorbonne Paris Nord.</p>
     </div>
-    <div class="intro-links">
-      <a href="https://github.com/EEEmryc" target="_blank">Mon GitHub</a>
-      <a href="cv.pdf" target="_blank">Voir mon CV</a>
+    <div class="intro-card">
+      <div class="intro-links">
+        <a href="https://github.com/EEEmryc" target="_blank">GitHub</a>
+        <a href="img/cv-emryc.pdf" target="_blank">Voir mon CV</a>
+      </div>
     </div>
   </section>
 
   <section id="apropos">
     <h2>À propos de moi</h2>
-    <p>Je suis né en 2004 et j'ai obtenu un baccalauréat avec les spécialités Mathématiques et NSI. En dehors de mes études, je suis passionné par l'escalade en bloc (en salle comme en extérieur), la musique et le cyclisme.</p>
+    <div class="apropos-content">
+      <p>Je m'appelle Emryc Humeau, né en 2004, et je poursuis actuellement mes études en BUT Informatique à l'Université Sorbonne Paris Nord. Depuis mon lycée, j'ai développé un fort intérêt pour les domaines de l'informatique, notamment grâce aux spécialités Mathématiques et NSI que j'ai choisies pour mon baccalauréat.</p>
+      <p>Mon parcours universitaire m'a permis de renforcer mes compétences en programmation, développement web, gestion de projets et bases de données. J'accorde une grande importance au travail en équipe, à la rigueur et à la curiosité, des qualités que je cultive au quotidien dans mes projets académiques comme personnels.</p>
+      <p>En dehors de l’informatique, je suis passionné par l’escalade en bloc (en salle comme en extérieur), la musique, et le cyclisme. Ces activités me permettent de garder un bon équilibre entre réflexion, créativité et dépassement de soi.</p>
+    </div>
   </section>
 
   <section id="competences">
     <h2>Compétences</h2>
     <div class="skills-grid">
-      <!-- 80% -->
-      <div class="skill-item" data-percent="80%">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
-        <span>Python</span>
-      </div>
-      <div class="skill-item" data-percent="80%">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
-        <span>HTML</span>
-      </div>
-      <div class="skill-item" data-percent="80%">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
-        <span>CSS</span>
-      </div>
-      <div class="skill-item" data-percent="80%">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
-        <span>Java</span>
-      </div>
-      <div class="skill-item" data-percent="80%">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VSCode">
-        <span>VSCode</span>
-      </div>
-      <!-- 70% -->
-      <div class="skill-item" data-percent="70%">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
-        <span>PHP</span>
-      </div>
-      <div class="skill-item" data-percent="70%">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
-        <span>GitHub</span>
-      </div>
-      <div class="skill-item" data-percent="70%">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="IntelliJ">
-        <span>IntelliJ</span>
-      </div>
-      <div class="skill-item" data-percent="70%">
-        <img src="virtualbox-logo.png" alt="VirtualBox">
-        <span>VirtualBox</span>
-      </div>
-      <div class="skill-item" data-percent="70%">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" alt="Marionnett">
-        <span>Marionnett</span>
-      </div>
-      <div class="skill-item" data-percent="70%">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C">
-        <span>C</span>
-      </div>
-      <!-- 60% -->
-      <div class="skill-item" data-percent="60%">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
-        <span>MySQL</span>
-      </div>
-      <div class="skill-item" data-percent="60%">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PGSQL">
-        <span>PGSQL</span>
-      </div>
-      <div class="skill-item" data-percent="60%">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQL">
-        <span>SQL</span>
-      </div>
+      <div class="skill-item" data-percent="80%"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></div>
+      <div class="skill-item" data-percent="80%"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"><span>HTML</span></div>
+      <div class="skill-item" data-percent="80%"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"><span>CSS</span></div>
+      <div class="skill-item" data-percent="80%"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"><span>Java</span></div>
+      <div class="skill-item" data-percent="80%"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VSCode"><span>VSCode</span></div>
+      <div class="skill-item" data-percent="70%"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP"><span>PHP</span></div>
+      <div class="skill-item" data-percent="70%"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"><span>GitHub</span></div>
+      <div class="skill-item" data-percent="70%"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="IntelliJ"><span>IntelliJ</span></div>
+      <div class="skill-item" data-percent="70%"><img src="img/virtualbox-logo.png" alt="VirtualBox"><span>VirtualBox</span></div>
+      <div class="skill-item" data-percent="70%"><img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" alt="Marionnet"><span>Marionnet</span></div>
+      <div class="skill-item" data-percent="70%"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C"><span>C</span></div>
+      <div class="skill-item" data-percent="60%"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"><span>MySQL</span></div>
+      <div class="skill-item" data-percent="60%"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PGSQL"><span>PGSQL</span></div>
+      <div class="skill-item" data-percent="60%"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQL"><span>SQL</span></div>
     </div>
   </section>
 
-  <section id="projets">
-    <h2>Mes projets</h2>
-    <div class="project">
-      <h3>Application de suivi de stage (2024-2025)</h3>
-      <p>Projet universitaire développé en équipe avec PHP, HTML et CSS pour permettre aux étudiants et enseignants de gérer les stages à l'université Sorbonne Paris Nord.</p>
-    </div>
-    <div class="project">
-      <h3>Parcours de cyclistes (depuis nov. 2024)</h3>
-      <p>Projet personnel en duo : création d’un site retraçant les parcours de cyclistes professionnels sur une carte interactive avec statistiques et performances officielles.</p>
-    </div>
-    <div class="project">
-      <h3>Recueil de besoins et site client (2023-2024)</h3>
-      <p>Projet universitaire : conception d’un site web sur-mesure selon les besoins d’un client réel, avec des compétences en communication, gestion de projet et travail d’équipe.</p>
+  <section id="langues">
+    <h2>Langues</h2>
+    <div class="langues-content">
+      <p>🇫🇷 Je parle couramment <strong>français</strong>, qui est ma langue maternelle.</p>
+      <p>🇬🇧 Je suis également <strong>fluent en anglais</strong>, à l'écrit comme à l'oral.</p>
+      <p>🇪🇸 Je possède <strong>les bases en espagnol</strong>, suffisantes pour des échanges simples.</p>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <form action="#" method="POST">
-      <label for="name">Nom</label>
-      <input type="text" id="name" name="name" required>
 
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
+<section id="projets">
+  <h2>Mes projets</h2>
+  <div class="projects-grid">
 
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="6" required></textarea>
+    <!-- Projet 1 -->
+    <div class="project-card" onclick="openModal('modal1')">
+      <h3>Application de suivi de stage</h3>
+      <div class="date">Septembre 2024 - Juin 2025</div>
+      <img src="img/Université_Sorbonne_Paris_Nord_-_Forum.webp" alt="Projet Suivi de Stage">
+      <p>Application web développée en PHP avec une interface simple.</p>
+    </div>
 
-      <button type="submit">Envoyer</button>
-    </form>
-  </section>
+    <div class="modal" id="modal1">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <h3>Application de suivi de stage</h3>
+        <p>Ce projet universitaire a été développé dans le cadre de ma deuxième année de BUT. L'application permet de gérer le suivi des stages étudiants : dépôt de documents, validation de conventions, gestion des utilisateurs (étudiants, enseignants, tuteurs), etc. Réalisée en équipe, nous avons utilisé PHP, MySQL, HTML/CSS, en appliquant une méthodologie agile et des outils de collaboration comme Git. Le site est sécurisé et respecte les standards RGPD en matière de données.</p>
+      </div>
+    </div>
+
+    <!-- Projet 2 -->
+    <div class="project-card" onclick="openModal('modal2')">
+      <h3>Site sur les parcours de cyclistes</h3>
+      <div class="date">Depuis Novembre 2024</div>
+      <img src="img/peloton-mountains-tour-de-france-col-peyresourde-july-climbing-road-to-col-peyresourde-pyrenees-stage-le-91474441.webp" alt="Projet Cyclistes">
+      <p>Projet personnel retraçant des parcours cyclistes avec carte.</p>
+    </div>
+
+    <div class="modal" id="modal2">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <h3>Site sur les parcours de cyclistes</h3>
+        <p>Ce projet personnel vise à visualiser les itinéraires de cyclistes professionnels sur une carte interactive, accompagnée de statistiques comme la distance, l'altitude, le temps, etc. Le site inclura également une galerie d’étapes du Tour de France, avec photos et anecdotes. Ce projet m’a permis de combiner passion et compétences en développement web.</p>
+      </div>
+    </div>
+
+    <!-- Projet 3 -->
+    <div class="project-card" onclick="openModal('modal3')">
+      <h3>Recueil de besoins client</h3>
+      <div class="date">Novembre 2023 - Janvier 2024</div>
+      <img src="img/team-teamwork-goals-strategy-vision-business-support-concept-50274164.webp" alt="Projet Client">
+      <p>Conception d’un site vitrine selon les attentes d’un client.</p>
+    </div>
+
+    <div class="modal" id="modal3">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <h3>Recueil de besoins client</h3>
+        <p>Ce projet consistait à analyser et formaliser les besoins d’un client pour concevoir un site web adapté. Après plusieurs entretiens, nous avons défini les fonctionnalités attendues et réalisé une maquette interactive. L’accent a été mis sur la communication avec le client, la clarté des spécifications, et la présentation d’un prototype final. Ce projet a renforcé mes compétences en expression écrite, gestion de projet, mais aussi en professionnalisme et relation client.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p class="contact-intro">
+    Si vous souhaitez me contacter pour un projet, une collaboration ou toute autre demande, n'hésitez pas à m’écrire via le formulaire ci-dessous. Je vous répondrai dans les plus brefs délais.
+  </p>
+  <form action="#" method="POST">
+    <label for="name">Nom</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="6" required></textarea>
+
+    <button type="submit">Envoyer</button>
+  </form>
+</section>
+
 
   <footer>
     <p>&copy; 2025 Emryc Humeau. Tous droits réservés.</p>
   </footer>
+
+  <script>
+    function openModal(id) {
+      document.getElementById(id).style.display = "block";
+    }
+    function closeModal(id) {
+      document.getElementById(id).style.display = "none";
+    }
+    window.onclick = function(event) {
+      const modals = document.querySelectorAll('.modal');
+      modals.forEach(modal => {
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      });
+    }
+  </script>
 </body>
 </html>
