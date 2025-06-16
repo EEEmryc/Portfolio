@@ -3,13 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Emryc Chumeau - Portfolio</title>
+  <title>Emryc Humeau - Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header class="site-header">
+    <nav>
+      <ul>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <section class="intro-section">
     <div class="intro-text">
-      <p>Je suis <strong>Emryc Chumeau</strong>, créateur d'expériences web modernes et intuitives.</p>
+      <p>Je suis <strong>Emryc Humeau</strong>, étudiant en BUT Informatique à l'Université Sorbonne Paris Nord.</p>
     </div>
     <div class="intro-links">
       <a href="https://github.com/EEEmryc" target="_blank">GitHub</a>
@@ -20,49 +31,66 @@
   <section id="about">
     <h2>À propos de moi</h2>
     <p>
-      Passionné par le développement web, je conçois des interfaces à la fois esthétiques et fonctionnelles.
-      J'aime créer des expériences fluides et efficaces, que ce soit en frontend ou en conception UI/UX.
+      Né en 2004, je suis actuellement en 2ème année de BUT Informatique à l'Université Sorbonne Paris Nord.
+      J'ai obtenu un baccalauréat avec les spécialités Mathématiques et NSI (Numérique et Sciences Informatiques).
+      Je suis passionné par le développement informatique et les systèmes web, mais aussi par l'escalade en bloc (en salle comme en extérieur), la musique, et le cyclisme.
     </p>
+  </section>
+
+  <section id="skills">
+    <h2>Compétences</h2>
+    <ul>
+      <li><strong>80%</strong> : Python, HTML, CSS, Java, PHP</li>
+      <li><strong>70%</strong> : VirtualBox, Marionnett</li>
+      <li><strong>60%</strong> : SQL</li>
+    </ul>
+    <h3>Outils</h3>
+    <ul>
+      <li>GitHub</li>
+      <li>VS Code</li>
+      <li>IntelliJ</li>
+      <li>PGSQL</li>
+      <li>MySQL</li>
+    </ul>
   </section>
 
   <section id="projects">
     <h2>Mes projets</h2>
 
     <div class="project">
-      <h3>Site vitrine pour un artisan</h3>
-      <p>Site responsive avec galerie d’images et formulaire de contact. HTML/CSS/JS pur.</p>
+      <h3>Application de suivi de stage (2024-2025)</h3>
+      <p>Dans le cadre de mon cursus universitaire, j'ai travaillé de septembre 2024 à juin 2025 sur une application web visant à faciliter le suivi des stages pour les étudiants et les enseignants de l'université Sorbonne Paris Nord. Le projet a mobilisé nos compétences en HTML, CSS et PHP, ainsi que le travail collaboratif au sein d'une équipe projet.</p>
     </div>
 
     <div class="project">
-      <h3>Application météo</h3>
-      <p>App React connectée à une API météo. Affichage des conditions en temps réel.</p>
+      <h3>Site sur les parcours de cyclistes (depuis novembre 2024)</h3>
+      <p>Avec un camarade, nous développons un site web personnel retraçant les parcours internationaux de cyclistes professionnels. L'objectif est de visualiser leurs déplacements sur une carte interactive, accompagnée de statistiques sur leurs performances en compétition officielle. Ce projet renforce mes compétences en développement web front-end et en structuration de données.</p>
     </div>
 
     <div class="project">
-      <h3>Portfolio en ligne</h3>
-      <p>Ce site ! Conçu avec HTML5, CSS3, et hébergé via GitHub Pages.</p>
+      <h3>Recueil de besoins client (2023-2024)</h3>
+      <p>Entre novembre 2023 et janvier 2024, j'ai participé à un projet consistant à créer un site web en réponse aux besoins exprimés par un client. Cette expérience m'a permis de développer mes compétences en communication, en professionnalisme et en travail d'équipe autour d'une commande concrète.</p>
     </div>
-  </section>
-
-  <section id="skills">
-    <h2>Compétences</h2>
-    <ul>
-      <li>HTML / CSS / JavaScript</li>
-      <li>React, Vue.js</li>
-      <li>Figma, Adobe XD</li>
-      <li>Git / GitHub</li>
-    </ul>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>emrychumeau@gmail.com</p>
-    <p><a href="https://github.com/EEEmryc">github.com/EEEmryc</a></p>
-    <p>Disponible pour missions freelance ou collaborations créatives !</p>
+    <form action="#" method="post">
+      <label for="name">Nom</label>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="message">Message</label><br>
+      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+      <button type="submit">Envoyer</button>
+    </form>
   </section>
 
   <footer>
-    <p>&copy; 2025 Emryc Chumeau. Tous droits réservés.</p>
+    <p>&copy; 2025 Emryc Humeau. Tous droits réservés.</p>
   </footer>
 </body>
 </html>
