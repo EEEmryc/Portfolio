@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Emryc Humeau - Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Emryc Humeau</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
     <nav>
       <ul>
-        <li><a href="#about">À propos</a></li>
-        <li><a href="#skills">Compétences</a></li>
-        <li><a href="#projects">Projets</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#projets">Projets</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -20,70 +20,111 @@
 
   <section class="intro-section">
     <div class="intro-text">
-      <p>Je suis <strong>Emryc Humeau</strong>, étudiant en BUT Informatique à l'Université Sorbonne Paris Nord.</p>
+      <p>Bonjour, je suis <strong>Emryc Humeau</strong>, étudiant en BUT Informatique à l'Université Sorbonne Paris Nord.</p>
     </div>
     <div class="intro-links">
-      <a href="https://github.com/EEEmryc" target="_blank">GitHub</a>
-      <a href="cv-emryc.pdf" target="_blank">Mon CV</a>
+      <a href="https://github.com/EEEmryc" target="_blank">Mon GitHub</a>
+      <a href="cv.pdf" target="_blank">Voir mon CV</a>
     </div>
   </section>
 
-  <section id="about">
+  <section id="apropos">
     <h2>À propos de moi</h2>
-    <p>
-      Né en 2004, je suis actuellement en 2ème année de BUT Informatique à l'Université Sorbonne Paris Nord.
-      J'ai obtenu un baccalauréat avec les spécialités Mathématiques et NSI (Numérique et Sciences Informatiques).
-      Je suis passionné par le développement informatique et les systèmes web, mais aussi par l'escalade en bloc (en salle comme en extérieur), la musique, et le cyclisme.
-    </p>
+    <p>Je suis né en 2004 et j'ai obtenu un baccalauréat avec les spécialités Mathématiques et NSI. En dehors de mes études, je suis passionné par l'escalade en bloc (en salle comme en extérieur), la musique et le cyclisme.</p>
   </section>
 
-  <section id="skills">
+  <section id="competences">
     <h2>Compétences</h2>
-    <ul>
-      <li><strong>80%</strong> : Python, HTML, CSS, Java, PHP</li>
-      <li><strong>70%</strong> : VirtualBox, Marionnett</li>
-      <li><strong>60%</strong> : SQL</li>
-    </ul>
-    <h3>Outils</h3>
-    <ul>
-      <li>GitHub</li>
-      <li>VS Code</li>
-      <li>IntelliJ</li>
-      <li>PGSQL</li>
-      <li>MySQL</li>
-    </ul>
+    <div class="skills-grid">
+      <!-- 80% -->
+      <div class="skill-item" data-percent="80%">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+        <span>Python</span>
+      </div>
+      <div class="skill-item" data-percent="80%">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+        <span>HTML</span>
+      </div>
+      <div class="skill-item" data-percent="80%">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+        <span>CSS</span>
+      </div>
+      <div class="skill-item" data-percent="80%">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+        <span>Java</span>
+      </div>
+      <div class="skill-item" data-percent="80%">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VSCode">
+        <span>VSCode</span>
+      </div>
+      <!-- 70% -->
+      <div class="skill-item" data-percent="70%">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+        <span>PHP</span>
+      </div>
+      <div class="skill-item" data-percent="70%">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+        <span>GitHub</span>
+      </div>
+      <div class="skill-item" data-percent="70%">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="IntelliJ">
+        <span>IntelliJ</span>
+      </div>
+      <div class="skill-item" data-percent="70%">
+        <img src="virtualbox-logo.png" alt="VirtualBox">
+        <span>VirtualBox</span>
+      </div>
+      <div class="skill-item" data-percent="70%">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" alt="Marionnett">
+        <span>Marionnett</span>
+      </div>
+      <div class="skill-item" data-percent="70%">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C">
+        <span>C</span>
+      </div>
+      <!-- 60% -->
+      <div class="skill-item" data-percent="60%">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+        <span>MySQL</span>
+      </div>
+      <div class="skill-item" data-percent="60%">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PGSQL">
+        <span>PGSQL</span>
+      </div>
+      <div class="skill-item" data-percent="60%">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQL">
+        <span>SQL</span>
+      </div>
+    </div>
   </section>
 
-  <section id="projects">
+  <section id="projets">
     <h2>Mes projets</h2>
-
     <div class="project">
       <h3>Application de suivi de stage (2024-2025)</h3>
-      <p>Dans le cadre de mon cursus universitaire, j'ai travaillé de septembre 2024 à juin 2025 sur une application web visant à faciliter le suivi des stages pour les étudiants et les enseignants de l'université Sorbonne Paris Nord. Le projet a mobilisé nos compétences en HTML, CSS et PHP, ainsi que le travail collaboratif au sein d'une équipe projet.</p>
+      <p>Projet universitaire développé en équipe avec PHP, HTML et CSS pour permettre aux étudiants et enseignants de gérer les stages à l'université Sorbonne Paris Nord.</p>
     </div>
-
     <div class="project">
-      <h3>Site sur les parcours de cyclistes (depuis novembre 2024)</h3>
-      <p>Avec un camarade, nous développons un site web personnel retraçant les parcours internationaux de cyclistes professionnels. L'objectif est de visualiser leurs déplacements sur une carte interactive, accompagnée de statistiques sur leurs performances en compétition officielle. Ce projet renforce mes compétences en développement web front-end et en structuration de données.</p>
+      <h3>Parcours de cyclistes (depuis nov. 2024)</h3>
+      <p>Projet personnel en duo : création d’un site retraçant les parcours de cyclistes professionnels sur une carte interactive avec statistiques et performances officielles.</p>
     </div>
-
     <div class="project">
-      <h3>Recueil de besoins client (2023-2024)</h3>
-      <p>Entre novembre 2023 et janvier 2024, j'ai participé à un projet consistant à créer un site web en réponse aux besoins exprimés par un client. Cette expérience m'a permis de développer mes compétences en communication, en professionnalisme et en travail d'équipe autour d'une commande concrète.</p>
+      <h3>Recueil de besoins et site client (2023-2024)</h3>
+      <p>Projet universitaire : conception d’un site web sur-mesure selon les besoins d’un client réel, avec des compétences en communication, gestion de projet et travail d’équipe.</p>
     </div>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <form action="#" method="post">
+    <form action="#" method="POST">
       <label for="name">Nom</label>
-      <input type="text" id="name" name="name" required><br><br>
+      <input type="text" id="name" name="name" required>
 
       <label for="email">Email</label>
-      <input type="email" id="email" name="email" required><br><br>
+      <input type="email" id="email" name="email" required>
 
-      <label for="message">Message</label><br>
-      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
 
       <button type="submit">Envoyer</button>
     </form>
