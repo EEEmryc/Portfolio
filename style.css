@@ -9,30 +9,45 @@ body {
   scroll-behavior: smooth;
 }
 
-header {
-  background-color: #0f0f0f;
-  color: #e0e0e0;
-  padding: 4rem 2rem;
-  text-align: center;
+.site-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(26, 71, 42, 0.8);
+  backdrop-filter: blur(6px);
+  z-index: 1000;
+  padding: 0.75rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-header h1 {
+.site-header nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
   margin: 0;
-  font-size: 2.5rem;
+  padding: 0;
 }
 
-header p {
-  font-size: 1.2rem;
-  margin-top: 0.5rem;
+.site-header nav ul li a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.site-header nav ul li a:hover {
+  color: #a3e635;
 }
 
 .intro-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8rem 2rem;
+  padding: 10rem 2rem 6rem;
   background-color: #0f0f0f;
-  color: #e0e0e0;
+  color: white;
   flex-wrap: wrap;
   min-height: 100vh;
 }
@@ -69,10 +84,10 @@ header p {
 section {
   padding: 3rem 2rem;
   max-width: 900px;
-  margin: auto;
+  margin: 2rem auto;
   background-color: #1a1a1a;
   border-radius: 12px;
-  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 h2 {
@@ -80,6 +95,7 @@ h2 {
   border-bottom: 2px solid #2d2d2d;
   padding-bottom: 0.5rem;
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .project {
@@ -87,12 +103,22 @@ h2 {
   padding: 1rem;
   border-left: 4px solid #a3e635;
   background-color: #121212;
+  border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.project h3 {
+  margin-top: 0;
+  color: #d9f99d;
 }
 
 ul {
   list-style: square;
   padding-left: 1.5rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
 }
 
 a {
@@ -104,6 +130,37 @@ a:hover {
   text-decoration: underline;
 }
 
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #d4d4d4;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: none;
+  background-color: #2d2d2d;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+form button {
+  background-color: #1a472a;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #14532d;
+}
+
 footer {
   text-align: center;
   background-color: #121212;
@@ -111,4 +168,5 @@ footer {
   font-size: 0.9rem;
   color: #888;
   margin-top: 2rem;
+  border-top: 1px solid #2d2d2d;
 }
