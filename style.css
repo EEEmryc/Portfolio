@@ -26,6 +26,44 @@ header p {
   margin-top: 0.5rem;
 }
 
+.intro-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem 2rem;
+  background-color: #1e293b;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.intro-text {
+  flex: 1;
+  font-size: 2rem;
+}
+
+.intro-links {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.intro-links a {
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.intro-links a:hover {
+  background-color: #2563eb;
+}
+
 section {
   padding: 3rem 2rem;
   max-width: 900px;
