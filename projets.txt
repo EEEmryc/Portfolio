@@ -25,14 +25,6 @@
   },
   {
     "id": "modal4",
-    "titre": "Audit de sécurité - Criterium",
-    "date": "Avril 2026",
-    "image": "img/audit-securite-criterium.webp",
-    "descriptionCourte": "Audit de sécurité pédagogique identifiant des vulnérabilités.",
-    "descriptionLongue": "Analyse de la plateforme pédagogique Criterium. Recherche de failles via les méthodes GET et identification de vulnérabilités de configuration, notamment un accès exposé à phpMyAdmin."
-  },
-  {
-    "id": "modal5",
     "titre": "Analyse et optimisation d'EDT",
     "date": "Juin 2026",
     "image": "img/analyse-edt-management.webp",
@@ -40,7 +32,7 @@
     "descriptionLongue": "Étude réalisée en collaboration avec la responsable des emplois du temps. L'objectif était d'analyser et de modéliser le processus de création existant, d'en identifier les limites, puis de proposer des hypothèses d'amélioration concrètes pour optimiser la planification."
   },
   {
-    "id": "modal6",
+    "id": "modal5",
     "titre": "Plateforme E-learning",
     "date": "Juin 2026",
     "image": "img/plateforme-elearning.webp",
