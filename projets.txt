@@ -45,6 +45,6 @@
     "date": "Juin 2026",
     "image": "img/plateforme-elearning.webp",
     "descriptionCourte": "Développement full-stack d'un site d'hébergement de cours.",
-    "descriptionLongue": "Projet d'architecture logicielle réalisé en groupe. Développement du front-end et du back-end d'une plateforme éducative intégrant des interfaces spécifiques et des gestions de droits pour les administrateurs, les professeurs et les élèves. Code source et gestion de projet centralisés sur GitHub."
+    "descriptionLongue": "Projet d'architecture logicielle réalisé en groupe. Développement du front-end et du back-end d'une plateforme éducative intégrant des interfaces spécifiques et des gestions de droits pour les administrateurs, les professeurs et les élèves. Code source et gestion de projet centralisés sur GitHub (dépôt TP_Architecture_Logicielle)."
   }
 ]
