@@ -19,7 +19,7 @@
     "id": "modal3",
     "titre": "Analyse et optimisation d'EDT",
     "date": "Juin 2026",
-    "image": "img/calendrier.avif",
+    "image": "img/calendrier.jpg",
     "descriptionCourte": "Analyse du processus de création des emplois du temps pour une promotion de BUT.",
     "descriptionLongue": "Étude réalisée en collaboration avec la responsable des emplois du temps. L'objectif était d'analyser et de modéliser le processus de création existant, d'en identifier les limites, puis de proposer des hypothèses d'amélioration concrètes pour optimiser la planification."
   },
@@ -27,7 +27,7 @@
     "id": "modal4",
     "titre": "Plateforme E-learning",
     "date": "Juin 2026",
-    "image": "img/photo-SAE.avif",
+    "image": "img/photo-SAE.jpg",
     "descriptionCourte": "Développement full-stack d'un site d'hébergement de cours.",
     "descriptionLongue": "Projet d'architecture logicielle réalisé en groupe. Développement du front-end et du back-end d'une plateforme éducative intégrant des interfaces spécifiques et des gestions de droits pour les administrateurs, les professeurs et les élèves. Code source et gestion de projet centralisés sur GitHub (dépôt TP_Architecture_Logicielle)."
   }
