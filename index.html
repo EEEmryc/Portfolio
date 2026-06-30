@@ -6,7 +6,6 @@
   <title>Portfolio - Emryc Humeau</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
   <header class="site-header">
     <nav>
@@ -35,10 +34,11 @@
   <section id="apropos">
     <h2>À propos de moi</h2>
     <div class="apropos-content">
-<p>Je m'appelle Emryc Humeau. Je suis actuellement étudiant en deuxième année de BUT Informatique à l'Université Sorbonne Paris Nord, et j'effectue mon parcours en alternance en tant que Développeur Front-end chez Speedy à Nanterre.</p>
-<p>Passionné par le développement logiciel, j'interviens au quotidien sur la maintenance d'outils internes et l'optimisation de bases de codes. Mon profil technique englobe des langages comme Python, SQL, Java et JavaScript, ainsi que l'utilisation d'outils tels que Windev et Git.</p>
-<p>Curieux et motivé, mes expériences m'ont permis d'acquérir une bonne rigueur professionnelle, une forte polyvalence et le sens du service. Je sais m'adapter rapidement, gérer les deadlines et travailler efficacement en équipe.</p>
-<p>Sur le plan personnel, je pratique régulièrement l'escalade en bloc. Je m'intéresse beaucoup à la musique, à la technologie et au cinéma.</p>
+      <p>Je m'appelle Emryc Humeau. Je suis actuellement étudiant en deuxième année de BUT Informatique à l'Université Sorbonne Paris Nord, et j'effectue mon parcours en alternance en tant que Développeur Front-end chez Speedy à Nanterre.</p>
+      <p>Passionné par le développement logiciel, j'interviens au quotidien sur la maintenance d'outils internes et l'optimisation de bases de codes. Mon profil technique englobe des langages comme Python, SQL, Java et JavaScript, ainsi que l'utilisation d'outils tels que Windev et Git.</p>
+      <p>Curieux et motivé, mes expériences m'ont permis d'acquérir une bonne rigueur professionnelle, une forte polyvalence et le sens du service. Je sais m'adapter rapidement, gérer les deadlines et travailler efficacement en équipe.</p>
+      <p>Sur le plan personnel, je pratique régulièrement l'escalade en bloc. Je m'intéresse beaucoup à la musique, à la technologie et au cinéma.</p>
+    </div>
   </section>
 
   <section id="competences">
@@ -65,108 +65,41 @@
   <section id="langues">
     <h2>Langues</h2>
     <div class="langues-content">
-      <p>Je parle couramment <strong>français</strong>, qui est ma langue maternelle.</p>
-      <p>Je maîtrise également l'anglais,<strong>, à l'écrit comme à l'oral.</strong></p>
-      <p>Je possède <strong>les bases en espagnol</strong>, suffisantes pour des échanges simples.</p>
+      <p>Je parle couramment français, qui est ma langue maternelle.</p>
+      <p>Je maîtrise également l'anglais, à l'écrit comme à l'oral.</p>
+      <p>Je possède les bases en espagnol, suffisantes pour des échanges simples.</p>
     </div>
   </section>
 
-
-<section id="projets">
-  <h2>Mes projets</h2>
-  <div class="projects-grid">
-
-    <!-- Projet 1 -->
-    <div class="project-card" onclick="openModal('modal1')">
-      <h3>Application de suivi de stage</h3>
-      <div class="date">Septembre 2024 - Juin 2025</div>
-      <img src="img/Université_Sorbonne_Paris_Nord_-_Forum.webp" alt="Projet Suivi de Stage">
-      <p>Application web développée en PHP avec une interface simple.</p>
+  <section id="projets">
+    <h2>Mes projets</h2>
+    <div class="projects-grid" id="projects-container">
     </div>
+  </section>
 
-    <div class="modal" id="modal1">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal1')">&times;</span>
-        <h3>Application de suivi de stage</h3>
-        <p>Ce projet universitaire a été développé dans le cadre de ma deuxième année de BUT. L'application permet de gérer le suivi des stages étudiants : dépôt de documents, validation de conventions, gestion des utilisateurs (étudiants, enseignants, tuteurs), etc. Réalisée en équipe, nous avons utilisé PHP, MySQL, HTML/CSS, en appliquant une méthodologie agile et des outils de collaboration comme Git. Le site est sécurisé et respecte les standards RGPD en matière de données.</p>
-      </div>
-    </div>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p class="contact-intro">
+      Si vous souhaitez me contacter pour un projet, une collaboration ou toute autre demande, n'hésitez pas à m’écrire via le formulaire ci-dessous.
+    </p>
+    <form action="mailto:emrychumeau@gmail.com" method="POST" enctype="text/plain">
+      <label for="name">Nom</label>
+      <input type="text" id="name" name="name" required>
 
-    <!-- Projet 2 -->
-    <div class="project-card" onclick="openModal('modal2')">
-      <h3>Site sur les parcours de cyclistes</h3>
-      <div class="date">Depuis Novembre 2024</div>
-      <img src="img/peloton-mountains-tour-de-france-col-peyresourde-july-climbing-road-to-col-peyresourde-pyrenees-stage-le-91474441.webp" alt="Projet Cyclistes">
-      <p>Projet personnel retraçant des parcours cyclistes avec carte.</p>
-    </div>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
 
-    <div class="modal" id="modal2">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal2')">&times;</span>
-        <h3>Site sur les parcours de cyclistes</h3>
-        <p>Ce projet personnel vise à visualiser les itinéraires de cyclistes professionnels sur une carte interactive, accompagnée de statistiques comme la distance, l'altitude, le temps, etc. Le site inclura également une galerie d’étapes du Tour de France, avec photos et anecdotes. Ce projet m’a permis de combiner passion et compétences en développement web.</p>
-      </div>
-    </div>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
 
-    <!-- Projet 3 -->
-    <div class="project-card" onclick="openModal('modal3')">
-      <h3>Recueil de besoins client</h3>
-      <div class="date">Novembre 2023 - Janvier 2024</div>
-      <img src="img/team-teamwork-goals-strategy-vision-business-support-concept-50274164.webp" alt="Projet Client">
-      <p>Conception d’un site vitrine selon les attentes d’un client.</p>
-    </div>
-
-    <div class="modal" id="modal3">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal3')">&times;</span>
-        <h3>Recueil de besoins client</h3>
-        <p>Ce projet consistait à analyser et formaliser les besoins d’un client pour concevoir un site web adapté. Après plusieurs entretiens, nous avons défini les fonctionnalités attendues et réalisé une maquette interactive. L’accent a été mis sur la communication avec le client, la clarté des spécifications, et la présentation d’un prototype final. Ce projet a renforcé mes compétences en expression écrite, gestion de projet, mais aussi en professionnalisme et relation client.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section id="contact">
-  <h2>Contact</h2>
-  <p class="contact-intro">
-    Si vous souhaitez me contacter pour un projet, une collaboration ou toute autre demande, n'hésitez pas à m’écrire via le formulaire ci-dessous. Je vous répondrai dans les plus brefs délais.
-  </p>
-  <form action="#" method="POST">
-    <label for="name">Nom</label>
-    <input type="text" id="name" name="name" required>
-
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" required>
-
-    <label for="message">Message</label>
-    <textarea id="message" name="message" rows="6" required></textarea>
-
-    <button type="submit">Envoyer</button>
-  </form>
-</section>
-
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
 
   <footer>
-    <p>&copy; 2025 Emryc Humeau. Tous droits réservés.</p>
+    <p>&copy; 2026 Emryc Humeau. Tous droits réservés.</p>
   </footer>
 
-  <script>
-    function openModal(id) {
-      document.getElementById(id).style.display = "block";
-    }
-    function closeModal(id) {
-      document.getElementById(id).style.display = "none";
-    }
-    window.onclick = function(event) {
-      const modals = document.querySelectorAll('.modal');
-      modals.forEach(modal => {
-        if (event.target === modal) {
-          modal.style.display = "none";
-        }
-      });
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
-

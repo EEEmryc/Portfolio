@@ -1,0 +1,50 @@
+[
+  {
+    "id": "modal1",
+    "titre": "Application de suivi de stage",
+    "date": "Juin 2025",
+    "image": "img/Université_Sorbonne_Paris_Nord_-_Forum.webp",
+    "descriptionCourte": "Application web développée en PHP avec une interface simple.",
+    "descriptionLongue": "Ce projet universitaire a été développé dans le cadre de ma deuxième année de BUT. L'application permet de gérer le suivi des stages étudiants. Réalisée en équipe, nous avons utilisé PHP, MySQL, HTML/CSS, en appliquant une méthodologie agile et des outils de collaboration comme Git."
+  },
+  {
+    "id": "modal2",
+    "titre": "Site sur les parcours de cyclistes",
+    "date": "En cours",
+    "image": "img/peloton-mountains-tour-de-france-col-peyresourde-july-climbing-road-to-col-peyresourde-pyrenees-stage-le-91474441.webp",
+    "descriptionCourte": "Projet personnel retraçant des parcours cyclistes avec carte.",
+    "descriptionLongue": "Ce projet personnel vise à visualiser les itinéraires de cyclistes professionnels sur une carte interactive, accompagnée de statistiques comme la distance, l'altitude, le temps, etc. Le site inclura également une galerie d'étapes du Tour de France."
+  },
+  {
+    "id": "modal3",
+    "titre": "Recueil de besoins client",
+    "date": "Janvier 2024",
+    "image": "img/team-teamwork-goals-strategy-vision-business-support-concept-50274164.webp",
+    "descriptionCourte": "Conception d'un site vitrine selon les attentes d'un client.",
+    "descriptionLongue": "Ce projet consistait à analyser et formaliser les besoins d'un client pour concevoir un site web adapté. L'accent a été mis sur la communication avec le client, la clarté des spécifications, et la présentation d'un prototype final."
+  },
+  {
+    "id": "modal4",
+    "titre": "Gestion de projet SAE",
+    "date": "Mars 2026",
+    "image": "",
+    "descriptionCourte": "Coordination d'équipe et gestion de versionnage sur GitHub.",
+    "descriptionLongue": "Rôle de manager durant trois semaines pour coordonner l'avancement de la SAE. Utilisation de Trello pour la répartition des tâches et intégration du code sur GitHub via des branches. Le développement a été réalisé exclusivement par les membres de l'équipe étudiante (17 questions traitées au total)."
+  },
+  {
+    "id": "modal5",
+    "titre": "Audit de sécurité - Criterium",
+    "date": "Avril 2026",
+    "image": "",
+    "descriptionCourte": "Audit de sécurité pédagogique identifiant des vulnérabilités.",
+    "descriptionLongue": "Analyse de la plateforme pédagogique Criterium. Recherche de failles via les méthodes GET et identification de vulnérabilités de configuration, notamment un accès exposé à phpMyAdmin."
+  },
+  {
+    "id": "modal6",
+    "titre": "Rapport BPM - Emplois du temps",
+    "date": "Juin 2026",
+    "image": "",
+    "descriptionCourte": "Analyse de processus métier pour le module R4.09.",
+    "descriptionLongue": "Rédaction d'un rapport académique complet sur le management avancé des systèmes d'information. Étude axée sur le Business Process Management (BPM) appliqué à un système responsable de la gestion des emplois du temps universitaires."
+  }
+]
