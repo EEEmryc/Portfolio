@@ -17,34 +17,34 @@
   },
   {
     "id": "modal3",
-    "titre": "Recueil de besoins client",
-    "date": "Janvier 2024",
-    "image": "img/team-teamwork-goals-strategy-vision-business-support-concept-50274164.webp",
-    "descriptionCourte": "Conception d'un site vitrine selon les attentes d'un client.",
-    "descriptionLongue": "Ce projet consistait à analyser et formaliser les besoins d'un client pour concevoir un site web adapté. L'accent a été mis sur la communication avec le client, la clarté des spécifications, et la présentation d'un prototype final."
-  },
-  {
-    "id": "modal4",
     "titre": "Gestion de projet SAE",
     "date": "Mars 2026",
-    "image": "",
+    "image": "img/gestion-equipe-sae.webp",
     "descriptionCourte": "Coordination d'équipe et gestion de versionnage sur GitHub.",
     "descriptionLongue": "Rôle de manager durant trois semaines pour coordonner l'avancement de la SAE. Utilisation de Trello pour la répartition des tâches et intégration du code sur GitHub via des branches. Le développement a été réalisé exclusivement par les membres de l'équipe étudiante (17 questions traitées au total)."
   },
   {
-    "id": "modal5",
+    "id": "modal4",
     "titre": "Audit de sécurité - Criterium",
     "date": "Avril 2026",
-    "image": "",
+    "image": "img/audit-securite-criterium.webp",
     "descriptionCourte": "Audit de sécurité pédagogique identifiant des vulnérabilités.",
     "descriptionLongue": "Analyse de la plateforme pédagogique Criterium. Recherche de failles via les méthodes GET et identification de vulnérabilités de configuration, notamment un accès exposé à phpMyAdmin."
   },
   {
-    "id": "modal6",
-    "titre": "Rapport BPM - Emplois du temps",
+    "id": "modal5",
+    "titre": "Analyse et optimisation d'EDT",
     "date": "Juin 2026",
-    "image": "",
-    "descriptionCourte": "Analyse de processus métier pour le module R4.09.",
-    "descriptionLongue": "Rédaction d'un rapport académique complet sur le management avancé des systèmes d'information. Étude axée sur le Business Process Management (BPM) appliqué à un système responsable de la gestion des emplois du temps universitaires."
+    "image": "img/analyse-edt-management.webp",
+    "descriptionCourte": "Analyse du processus de création des emplois du temps pour une promotion de BUT.",
+    "descriptionLongue": "Étude réalisée en collaboration avec la responsable des emplois du temps. L'objectif était d'analyser et de modéliser le processus de création existant, d'en identifier les limites, puis de proposer des hypothèses d'amélioration concrètes pour optimiser la planification."
+  },
+  {
+    "id": "modal6",
+    "titre": "Plateforme E-learning",
+    "date": "Juin 2026",
+    "image": "img/plateforme-elearning.webp",
+    "descriptionCourte": "Développement full-stack d'un site d'hébergement de cours.",
+    "descriptionLongue": "Projet d'architecture logicielle réalisé en groupe. Développement du front-end et du back-end d'une plateforme éducative intégrant des interfaces spécifiques et des gestions de droits pour les administrateurs, les professeurs et les élèves. Code source et gestion de projet centralisés sur GitHub."
   }
 ]
