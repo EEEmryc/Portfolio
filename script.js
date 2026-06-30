@@ -1,23 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Récupération des données depuis le fichier .txt
   fetch('projets.txt')
     .then(response => {
       if (!response.ok) {
-        throw new Error("Erreur lors de la lecture du fichier projets.txt");
+        throw new Error("Erreur de chargement");
       }
-      return response.json(); // Le texte est interprété comme du JSON
+      return response.json();
     })
     .then(projets => {
       const container = document.getElementById('projects-container');
       let htmlContent = '';
 
-      // Génération du code HTML pour chaque projet
       projets.forEach(projet => {
         htmlContent += `
           <div class="project-card" onclick="openModal('${projet.id}')">
             <h3>${projet.titre}</h3>
             <div class="date">${projet.date}</div>
-            <img src="${projet.image}" alt="${projet.titre}">
+            <img src="${projet.image}" alt="${projet.titre}" onerror="this.src='https://via.placeholder.com/400x200'">
             <p>${projet.descriptionCourte}</p>
           </div>
 
@@ -33,7 +31,9 @@ document.addEventListener("DOMContentLoaded", () => {
       
       container.innerHTML = htmlContent;
     })
-    .catch(error => console.error(error));
+    .catch(error => {
+      console.error(error);
+    });
 });
 
 function openModal(id) {
@@ -44,7 +44,6 @@ function closeModal(id) {
   document.getElementById(id).style.display = "none";
 }
 
-// Fermeture de la modale par clic à l'extérieur
 window.onclick = function(event) {
   const modals = document.querySelectorAll('.modal');
   modals.forEach(modal => {
