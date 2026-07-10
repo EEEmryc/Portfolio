@@ -8,7 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .then(projets => {
       const container = document.getElementById('projects-container');
-      const projetsSection = document.getElementById('projets');
+      // On cible le conteneur de la section pour y injecter les modales
+      const sectionContainer = container.closest('.section-container');
       
       let cardsHtml = '';
       let modalsHtml = '';
@@ -36,7 +37,9 @@ document.addEventListener("DOMContentLoaded", () => {
       
       container.innerHTML = cardsHtml;
       
-      projetsSection.insertAdjacentHTML('beforeend', modalsHtml);
+      if (sectionContainer) {
+        sectionContainer.insertAdjacentHTML('beforeend', modalsHtml);
+      }
     })
     .catch(error => {
       console.error(error);
