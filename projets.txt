@@ -37,6 +37,8 @@
     "date": "Juillet 2026",
     "image": "img/photo-cookbook.jpg",
     "descriptionCourte": "Application de gestion et d'optimisation de recettes quotidiennes.",
-    "descriptionLongue": "Développement d'une application de bureau native dédiée à la gestion culinaire et à l'analyse nutritionnelle automatisée. Conçu en Python avec le framework Flet (basé sur Flutter), le logiciel intègre une base de données relationnelle locale SQLite pour le stockage des recettes et l'ingestion complète des 3 400 références de la base de données gouvernementale CIQUAL, complétée par des requêtes asynchrones vers l'API Open Food Facts. Le cœur de l'application repose sur un moteur d'analyse syntaxique en logique hybride permettant la saisie en langage naturel des ingrédients, un algorithme de conversion dynamique des volumes en masses selon la densité des aliments, et un calcul vectoriel en temps réel des calories et des macro/micro-nutriments. Un accent strict a été mis sur la qualité de code."
+    "descriptionLongue": "Développement d'une application de bureau native dédiée à la gestion culinaire et à l'analyse nutritionnelle automatisée. Conçu en Python avec le framework Flet (basé sur Flutter), le logiciel intègre une base de données relationnelle locale SQLite pour le stockage des recettes et l'ingestion complète des 3 400 références de la base de données gouvernementale CIQUAL, complétée par des requêtes asynchrones vers l'API Open Food Facts. 
+
+Le cœur de l'application repose sur un moteur d'analyse syntaxique en logique hybride permettant la saisie en langage naturel des ingrédients, un algorithme de conversion dynamique des volumes en masses selon la densité des aliments, et un calcul vectoriel en temps réel des calories et des macro/micro-nutriments. Un accent strict a été mis sur la qualité de code."
   }
 ]
