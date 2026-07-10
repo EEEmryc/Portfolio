@@ -96,11 +96,8 @@ section {
   box-sizing: border-box;
 }
 
-#projets {
-  position: relative;
-}
-
 .section-container {
+  position: relative; /* Repère pour la modale */
   max-width: 900px;
   margin: 0 auto;
   background-color: rgba(30, 30, 30, 0.85);
@@ -261,7 +258,7 @@ h2 {
   height: 100%;
   backdrop-filter: blur(5px);
   background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 12px;
+  border-radius: 12px; /* Correspond à l'arrondi du conteneur */
 }
 
 .modal-content {
@@ -271,7 +268,7 @@ h2 {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 2rem;
-  width: 80%;
+  width: 85%;
   max-width: 600px;
   border-radius: 12px;
   color: #e0e0e0;
