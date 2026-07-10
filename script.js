@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .then(projets => {
       const container = document.getElementById('projects-container');
+      const projetsSection = document.getElementById('projets');
       
       let cardsHtml = '';
       let modalsHtml = '';
@@ -35,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
       
       container.innerHTML = cardsHtml;
       
-      document.body.insertAdjacentHTML('beforeend', modalsHtml);
+      projetsSection.insertAdjacentHTML('beforeend', modalsHtml);
     })
     .catch(error => {
       console.error(error);
