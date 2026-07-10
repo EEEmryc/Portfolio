@@ -8,17 +8,21 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .then(projets => {
       const container = document.getElementById('projects-container');
-      let htmlContent = '';
+      
+      let cardsHtml = '';
+      let modalsHtml = '';
 
       projets.forEach(projet => {
-        htmlContent += `
+        cardsHtml += `
           <div class="project-card" onclick="openModal('${projet.id}')">
             <h3>${projet.titre}</h3>
             <div class="date">${projet.date}</div>
             <img src="${projet.image}" alt="${projet.titre}" onerror="this.src='https://via.placeholder.com/400x200'">
             <p>${projet.descriptionCourte}</p>
           </div>
+        `;
 
+        modalsHtml += `
           <div class="modal" id="${projet.id}">
             <div class="modal-content">
               <span class="close" onclick="closeModal('${projet.id}')">&times;</span>
@@ -29,7 +33,9 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
       });
       
-      container.innerHTML = htmlContent;
+      container.innerHTML = cardsHtml;
+      
+      document.body.insertAdjacentHTML('beforeend', modalsHtml);
     })
     .catch(error => {
       console.error(error);
