@@ -75,4 +75,44 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   updateCarousel();
+
+
+  const projects = [
+    {
+      title: "Cookbook",
+      description: "Application de gestion de recettes de cuisine développée en Python avec interface Tkinter et base de données SQLite.",
+      tags: ["Python", "Tkinter", "SQLite"],
+      link: "https://github.com/EEEmryc/Cookbook"
+    },
+    {
+      title: "Refonte Logiciel Accueil",
+      description: "Optimisation et refonte d'une application interne d'accueil pour moderniser l'interface et fluidifier le parcours utilisateur.",
+      tags: ["Front-end", "WLanguage", "SQL"],
+      link: "https://github.com/EEEmryc"
+    },
+    {
+      title: "Projet Digital Show",
+      description: "Conception et intégration de sites web vitrines durant un stage d'ingénierie web.",
+      tags: ["HTML", "CSS", "JavaScript"],
+      link: "https://github.com/EEEmryc"
+    }
+  ];
+
+  const projectsContainer = document.getElementById('projects-container');
+
+  if (projectsContainer) {
+    projectsContainer.innerHTML = projects.map(project => `
+      <div class="bento-card" onclick="window.open('${project.link}', '_blank')">
+        <div class="bento-card-content">
+          <div>
+            <span class="bento-tag">${project.tags.join(' • ')}</span>
+            <h2>${project.title}</h2>
+            <p class="bento-preview">${project.description}</p>
+          </div>
+          <span class="bento-link">Voir sur GitHub &rarr;</span>
+        </div>
+      </div>
+    `).join('');
+  }
+
 });
