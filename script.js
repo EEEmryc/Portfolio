@@ -77,42 +77,31 @@ document.addEventListener('DOMContentLoaded', () => {
   updateCarousel();
 
 
-  const projects = [
-    {
-      title: "Cookbook",
-      description: "Application de gestion de recettes de cuisine développée en Python avec interface Tkinter et base de données SQLite.",
-      tags: ["Python", "Tkinter", "SQLite"],
-      link: "https://github.com/EEEmryc/Cookbook"
-    },
-    {
-      title: "Refonte Logiciel Accueil",
-      description: "Optimisation et refonte d'une application interne d'accueil pour moderniser l'interface et fluidifier le parcours utilisateur.",
-      tags: ["Front-end", "WLanguage", "SQL"],
-      link: "https://github.com/EEEmryc"
-    },
-    {
-      title: "Projet Digital Show",
-      description: "Conception et intégration de sites web vitrines durant un stage d'ingénierie web.",
-      tags: ["HTML", "CSS", "JavaScript"],
-      link: "https://github.com/EEEmryc"
-    }
-  ];
-
+  // CHARGEMENT DYNAMIQUE DEPUIS projet.txt
   const projectsContainer = document.getElementById('projects-container');
 
   if (projectsContainer) {
-    projectsContainer.innerHTML = projects.map(project => `
-      <div class="bento-card" onclick="window.open('${project.link}', '_blank')">
-        <div class="bento-card-content">
-          <div>
-            <span class="bento-tag">${project.tags.join(' • ')}</span>
-            <h2>${project.title}</h2>
-            <p class="bento-preview">${project.description}</p>
+    fetch('projet.txt')
+      .then(response => response.json())
+      .then(projects => {
+        projectsContainer.innerHTML = projects.map(project => `
+          <div class="bento-card">
+            <div class="bento-card-content">
+              <div>
+                <div style="height: 160px; overflow: hidden; border-radius: 12px; margin-bottom: 1rem; background: rgba(255,255,255,0.02);">
+                  <img src="${project.image}" alt="${project.titre}" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <span class="bento-tag">${project.date}</span>
+                <h2>${project.titre}</h2>
+                <p class="bento-preview">${project.descriptionCourte}</p>
+              </div>
+            </div>
           </div>
-          <span class="bento-link">Voir sur GitHub &rarr;</span>
-        </div>
-      </div>
-    `).join('');
+        `).join('');
+      })
+      .catch(error => {
+        console.error("Erreur lors du chargement des projets :", error);
+      });
   }
 
 });
