@@ -7,21 +7,30 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <svg class="bg-line-svg" viewBox="0 0 100 400" preserveAspectRatio="none">
+    <path class="line-base" d="M 20,0 Q 80,40 70,80 T 20,160 T 80,240 T 30,320 T 70,400" 
+          fill="none" stroke="rgba(114, 192, 80, 0.15)" stroke-width="0.3" stroke-linecap="round" />
+    <path class="line-pulse" d="M 20,0 Q 80,40 70,80 T 20,160 T 80,240 T 30,320 T 70,400" 
+          fill="none" stroke="rgba(114, 192, 80, 0.85)" stroke-width="0.45" stroke-linecap="round" />
+  </svg>
+
   <header class="site-header">
     <nav>
       <ul>
-        <li><a href="#apropos">À propos</a></li>
-        <li><a href="#objectifs">Objectifs</a></li>
-        <li><a href="#parcours">Parcours</a></li>
+        <li><a href="#bento">Vue d'ensemble</a></li>
         <li><a href="#competences">Compétences</a></li>
         <li><a href="#projets">Projets</a></li>
-        <li><a href="#langues">Langues</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <section class="intro-section">
+    <div class="status-badge">
+      <span class="status-dot"></span>
+      <span>Développeur Front-end en alternance @ Speedy</span>
+    </div>
     <div class="intro-text">
       <p>Bonjour, je suis <strong>Emryc Humeau</strong>, étudiant en BUT Informatique à l'Université Sorbonne Paris Nord.</p>
     </div>
@@ -31,103 +40,154 @@
     </div>
   </section>
 
-  <section id="apropos">
-    <div class="section-container">
-      <h2>À propos de moi</h2>
-      <div class="apropos-content">
-        <p>Je m'appelle Emryc Humeau. Je suis actuellement étudiant en deuxième année de BUT Informatique à l'Université Sorbonne Paris Nord, et j'effectue mon parcours en alternance en tant que Développeur Front-end chez Speedy à Nanterre.</p>
-        <p>J'interviens au quotidien sur la maintenance d'outils internes et l'optimisation de bases de codes. Mon profil technique englobe des langages comme Python, SQL, Java et JavaScript, ainsi que l'utilisation d'outils tels que Windev et GitHub.</p>
-        <p>Curieux et motivé, mes expériences m'ont permis d'acquérir une bonne rigueur professionnelle, une forte polyvalence et le sens du service. Je sais m'adapter rapidement, gérer les deadlines et travailler efficacement en équipe.</p>
-        <p>Sur le plan personnel, je pratique régulièrement l'escalade en bloc. Je m'intéresse beaucoup à la musique, à la technologie et au cinéma.</p>
+  <main id="bento" class="bento-container">
+    
+    <div class="bento-card span-8 bento-card-centered" data-modal="modal-apropos">
+      <div class="bento-card-content">
+        <div>
+          <span class="bento-tag">Présentation</span>
+          <h2>À propos de moi</h2>
+          <p class="bento-preview">
+            Étudiant en 2e année de BUT Informatique à la Sorbonne Paris Nord et alternant chez Speedy à Nanterre. Passionné par le développement Front-end, l'optimisation d'interfaces et la conception d'expériences utilisateur fluides. J'interviens au quotidien sur la maintenance d'outils internes et l'amélioration continue de bases de code.
+          </p>
+        </div>
+        <span class="bento-link">Cliquer pour lire ma présentation complète &rarr;</span>
       </div>
     </div>
-  </section>
 
-  <section id="objectifs">
-    <div class="section-container">
-      <h2>Objectifs & Perspectives</h2>
-      <div class="objectifs-content">
-        <p>Mon parcours s'appuie sur deux expériences clés : un stage formateur chez <strong>Digital Show</strong>, où j’ai participé à la création de plusieurs sites web, et mon alternance actuelle en tant que développeur Front-end chez <strong>Speedy</strong>. Ce double ancrage professionnel, que je complète par le développement de projets personnels, m'a permis de bâtir des bases techniques solides dans la conception et l'optimisation d'interfaces.</p>
-        <p>Au-delà du code, ma sensibilité pour différentes formes d'art nourrit ma créativité et renforce mon attrait pour le Front-end, un domaine où le visuel et l'expérience utilisateur occupent une place centrale.</p>
-        <p>Outre mes projets personnels et professionnels, j’adopte une démarche proactive : dès que je repère des sites internet perfectibles, comme ceux de restaurants locaux ou d'entrepreneurs indépendants, je prends l'initiative de les contacter pour leur proposer d'optimiser leur interface et de fluidifier leur navigation.</p>
-        <p>Mon objectif est d'allier rigueur technique, autonomie et créativité au sein d'environnements exigeants, afin de continuer à concevoir des solutions web performantes et adaptées aux besoins réels.</p>
+    <div class="bento-card span-4" data-modal="modal-passions">
+      <div class="bento-card-content">
+        <div>
+          <span class="bento-tag">Profil</span>
+          <h3>Stack Principale</h3>
+          <ul class="mini-stack-list">
+            <li>HTML / CSS / JS</li>
+            <li>Python & Java</li>
+            <li>WinDev & SQL</li>
+          </ul>
+          <div class="mini-info">
+            <span>Localisation :</span> Île-de-France<br>
+            <span>Passions :</span> Escalade en bloc, musique, cinéma
+          </div>
+        </div>
+        <span class="bento-link" style="margin-top: 1rem;">En savoir plus sur mes passions &rarr;</span>
       </div>
     </div>
-  </section>
 
-  <section id="parcours">
-    <div class="section-container">
-      <h2>Parcours & Cursus</h2>
-      <div class="parcours-list">
-        <div class="parcours-item">
-          <span class="parcours-date">2024 - 2027</span>
-          <div class="parcours-details">
-            <h3>BUT Informatique en alternance</h3>
-            <p><strong>Université Sorbonne Paris Nord</strong> - Villetaneuse</p>
-            <p>Formation axée sur le développement logiciel, la gestion de données et l'ingénierie web. Parcours réalisé en apprentissage en tant que <strong>Développeur Front-end </strong> chez <strong> Speedy</strong> (Nanterre), où j'interviens sur la maintenance d'applications internes et l'optimisation d'interfaces.</p>
+    <div class="bento-card span-6" data-modal="modal-objectifs">
+      <div class="bento-card-content">
+        <div>
+          <span class="bento-tag">Vision</span>
+          <h2>Objectifs & Perspectives</h2>
+          <p class="bento-preview">
+            Fort d'une expérience entre stage chez Digital Show et alternance chez Speedy, je vise à concevoir des applications web hautement performantes tout en apportant des solutions concrètes...
+          </p>
+        </div>
+        <span class="bento-link">Cliquer pour voir mes objectifs &rarr;</span>
+      </div>
+    </div>
+
+    <div class="bento-card span-6" data-modal="modal-langues">
+      <div class="bento-card-content">
+        <div>
+          <span class="bento-tag">International</span>
+          <h2>Langues maîtrisées</h2>
+          <p class="bento-preview">
+            • <strong>Français :</strong> Langue maternelle<br>
+            • <strong>Anglais :</strong> Courant (Veille technique & échanges)<br>
+            • <strong>Espagnol :</strong> Notions élémentaires
+          </p>
+        </div>
+        <span class="bento-link">Détails de mes compétences linguistiques &rarr;</span>
+      </div>
+    </div>
+
+    <div class="bento-card span-12" data-modal="modal-parcours">
+      <div class="bento-card-content row-layout">
+        <div>
+          <span class="bento-tag">Cursus</span>
+          <h2>Parcours & Formation</h2>
+          <p class="bento-preview" style="margin-bottom: 0;">
+            <strong>2024 - 2027 :</strong> BUT Informatique en alternance (Sorbonne Paris Nord / Speedy) &nbsp;|&nbsp; 
+            <strong>2022 :</strong> Baccalauréat Général Mention Assez Bien
+          </p>
+        </div>
+        <span class="bento-link">Voir le détail du parcours &rarr;</span>
+      </div>
+    </div>
+
+  </main>
+
+  <section id="competences" class="slider-section">
+    <div class="slider-header">
+      <h2>Compétences & Soft Skills</h2>
+      <div class="slider-controls">
+        <button class="slider-btn" id="prevSkillBtn">&larr;</button>
+        <button class="slider-btn" id="nextSkillBtn">&rarr;</button>
+      </div>
+    </div>
+
+    <div class="slider-viewport">
+      <div class="slider-container" id="sliderContainer">
+
+        <div class="category-card" data-index="0">
+          <div class="category-header">
+            <h3>Compétences & Langages</h3>
+          </div>
+          <div class="items-grid">
+            <div class="skill-item" data-percent="70%"><img src="img/windev-logo.jpg" alt="WinDev"><span>WinDev</span></div>
+            <div class="skill-item" data-percent="70%"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></div>
+            <div class="skill-item" data-percent="70%"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"><span>HTML</span></div>
+            <div class="skill-item" data-percent="70%"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"><span>CSS</span></div>
+            <div class="skill-item" data-percent="70%"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"><span>Java</span></div>
+            <div class="skill-item" data-percent="65%"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></div>
+            <div class="skill-item" data-percent="65%"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP"><span>PHP</span></div>
+            <div class="skill-item" data-percent="60%"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot"><span>Spring Boot</span></div>
+            <div class="skill-item" data-percent="60%"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C"><span>C</span></div>
+            <div class="skill-item" data-percent="60%"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"><span>MySQL</span></div>
+            <div class="skill-item" data-percent="60%"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PGSQL"><span>PGSQL</span></div>
+            <div class="skill-item" data-percent="60%"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQL"><span>SQL</span></div>
           </div>
         </div>
 
-        <div class="parcours-item">
-          <span class="parcours-date">2022</span>
-          <div class="parcours-details">
-            <h3>Baccalauréat Général</h3>
-            <p><strong>Lycée Georges Sand</strong> - Domont</p>
-            <p>Obtenu avec Mention Assez Bien. Spécialités Mathématiques, Physique-Chimie et NSI (Numérique et Sciences Informatiques).</p>
+        <div class="category-card" data-index="1">
+          <div class="category-header">
+            <h3>Logiciels & Environnements</h3>
+          </div>
+          <div class="items-grid">
+            <div class="skill-item" data-percent="70%"><img src="img/windev-logo.jpg" alt="WinDev"><span>WinDev</span></div>
+            <div class="skill-item" data-percent="70%"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VSCode"><span>VSCode</span></div>
+            <div class="skill-item" data-percent="65%"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"><span>GitHub</span></div>
+            <div class="skill-item" data-percent="65%"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="IntelliJ"><span>IntelliJ</span></div>
+            <div class="skill-item" data-percent="65%"><img src="img/virtualbox-logo.png" alt="VirtualBox"><span>VirtualBox</span></div>
+            <div class="skill-item" data-percent="60%"><img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" alt="Marionnet"><span>Marionnet</span></div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <section id="competences">
-    <div class="section-container">
-      <h2>Compétences & Outils</h2>
-      
-      <div class="skills-grid">
-        <div class="skill-item" data-percent="70%"><img src="img/windev-logo.jpg" alt="WinDev"><span>WinDev</span></div>
-        <div class="skill-item" data-percent="70%"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></div>
-        <div class="skill-item" data-percent="70%"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"><span>HTML</span></div>
-        <div class="skill-item" data-percent="70%"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"><span>CSS</span></div>
-        <div class="skill-item" data-percent="70%"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"><span>Java</span></div>
-        <div class="skill-item" data-percent="65%"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></div>
-        <div class="skill-item" data-percent="65%"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP"><span>PHP</span></div>
-        <div class="skill-item" data-percent="60%"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot"><span>Spring Boot</span></div>
-        <div class="skill-item" data-percent="60%"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C"><span>C</span></div>
-        <div class="skill-item" data-percent="60%"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"><span>MySQL</span></div>
-        <div class="skill-item" data-percent="60%"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PGSQL"><span>PGSQL</span></div>
-        <div class="skill-item" data-percent="60%"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQL"><span>SQL</span></div>
-      </div>
-
-      <h3 class="skills-subtitle">Logiciels</h3>
-
-      <div class="skills-grid">
-        <div class="skill-item" data-percent="70%"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VSCode"><span>VSCode</span></div>
-        <div class="skill-item" data-percent="65%"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"><span>GitHub</span></div>
-        <div class="skill-item" data-percent="65%"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="IntelliJ"><span>IntelliJ</span></div>
-        <div class="skill-item" data-percent="65%"><img src="img/virtualbox-logo.png" alt="VirtualBox"><span>VirtualBox</span></div>
-        <div class="skill-item" data-percent="60%"><img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" alt="Marionnet"><span>Marionnet</span></div>
-      </div>
-
-      <h3 class="skills-subtitle">Soft Skills</h3>
-
-      <div class="soft-skills-grid">
-        <div class="soft-skill-item">
-          <h4>Autonomie & Rigueur</h4>
-          <p>Capacité à prendre en charge des tâches complexes, à structurer son code et à respecter les exigences de qualité.</p>
+        <div class="category-card" data-index="2">
+          <div class="category-header">
+            <h3>Soft Skills</h3>
+          </div>
+          <div class="soft-skills-flex">
+            <div class="soft-card">
+              <h4>Autonomie & Rigueur</h4>
+              <p>Prise en charge de tâches complexes & structuration d'un code de qualité.</p>
+            </div>
+            <div class="soft-card">
+              <h4>Adaptabilité</h4>
+              <p>Montée en compétences rapide sur de nouveaux outils et langages.</p>
+            </div>
+            <div class="soft-card">
+              <h4>Esprit Agile</h4>
+              <p>Collaboration fluide en entreprise et sur projets académiques.</p>
+            </div>
+            <div class="soft-card">
+              <h4>Résolution de problèmes</h4>
+              <p>Analyse rapide pour déboguer et apporter des solutions pérennes.</p>
+            </div>
+          </div>
         </div>
-        <div class="soft-skill-item">
-          <h4>Adaptabilité</h4>
-          <p>Facilité à monter rapidement en compétences sur de nouveaux langages, frameworks ou environnements d'entreprise.</p>
-        </div>
-        <div class="soft-skill-item">
-          <h4>Travail d'équipe & Esprit Agile</h4>
-          <p>Collaboration fluide lors des projets de groupe (SAE) et en entreprise, écoute active et gestion collective des tâches.</p>
-        </div>
-        <div class="soft-skill-item">
-          <h4>Résolution de problèmes</h4>
-          <p>Démarche analytique pour identifier rapidement l'origine d'un bug ou d'un dysfonctionnement et proposer une solution adaptée.</p>
-        </div>
+
       </div>
     </div>
   </section>
@@ -135,19 +195,7 @@
   <section id="projets">
     <div class="section-container">
       <h2>Mes projets</h2>
-      <div class="projects-grid" id="projects-container">
-      </div>
-    </div>
-  </section>
-
-  <section id="langues">
-    <div class="section-container">
-      <h2>Langues</h2>
-      <div class="langues-content">
-        <p><strong>Français :</strong> Le français est ma langue maternelle.</p>
-        <p><strong>Anglais :</strong>Je maîtrise également l'anglais tant à l'écrit qu'à l'oral. Mon utilisation quotidienne de cette langue pour la veille technique, la documentation et tout type de divertissement me permet de converser et de comprendre un interlocuteur natif sans difficulté.</p>
-        <p><strong>Espagnol :</strong>Je possède les bases suffisantes pour comprendre des textes simples ou formuler des réponses élémentaires.</p>
-      </div>
+      <div class="projects-grid" id="projects-container"></div>
     </div>
   </section>
 
@@ -155,7 +203,7 @@
     <div class="section-container">
       <h2>Contact</h2>
       <p class="contact-intro">
-        Si vous souhaitez me contacter pour un projet, une collaboration ou toute autre demande, n'hésitez pas à m'écrire via le formulaire ci-dessous.
+        Une question ou une opportunité de collaboration ? Écrivez-moi directement via le formulaire ci-dessous.
       </p>
       <form action="mailto:emrychumeau@gmail.com" method="POST" enctype="text/plain">
         <label for="name">Nom</label>
@@ -172,6 +220,73 @@
   <footer>
     <p>&copy; 2026 Emryc Humeau. Tous droits réservés.</p>
   </footer>
+
+  <div id="modal-apropos" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>À propos de moi</h2>
+      <p>Je m'appelle Emryc Humeau. Je suis actuellement étudiant en deuxième année de BUT Informatique à l'Université Sorbonne Paris Nord, et j'effectue mon parcours en alternance en tant que Développeur Front-end chez Speedy à Nanterre.</p>
+      <p>J'interviens au quotidien sur la maintenance d'outils internes et l'optimisation de bases de codes. Mon profil technique englobe des langages comme Python, SQL, Java et JavaScript, ainsi que l'utilisation d'outils tels que Windev et GitHub.</p>
+      <p>Curieux et motivé, mes expériences m'ont permis d'acquérir une bonne rigueur professionnelle, une forte polyvalence et le sens du service. Je sais m'adapter rapidement, gérer les deadlines et travailler efficacement en équipe.</p>
+    </div>
+  </div>
+
+  <div id="modal-passions" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Centres d'intérêt & Passions</h2>
+      <p><strong>Escalade en bloc :</strong> J'ai toujours aimé l'escalade, mais je suis tombé amoureux de la grimpe en bloc il y a environ 3 ans. Ce que j'aime, c'est le côté résolution de problèmes : il faut analyser la voie, anticiper les mouvements et faire preuve de patience pour réussir un parcours difficile. J'éprouve une immense satisfaction au moment ou je valide un bloc, comparable à celle d'un programme qui m'a demandé beaucoup de réflexion et qui fonctionne enfin.</p>
+      <p><strong>Musique :</strong> J'écoute de la musique au quotidien dès que j'ai la possibilité de le faire. C'est ce qui m'accompagne pendant que je code ou que je me déplace. J'aime tout autant découvrir de nouveaux artistes et styles qu'écouter mes titres favoris en boucle.</p>
+      <p><strong>Cinéma :</strong> Le cinéma me fascine véritablement. Je suis particulièrement sensible aux belles scénographies, aux cadrages travaillés et au bon jeu d'acteur. Mon réalisateur préféré est Wes Anderson, notamment pour son sens du détail, sa symétrie et la poésie visuelle de ses films.</p>
+    </div>
+  </div>
+
+  <div id="modal-objectifs" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Objectifs & Perspectives</h2>
+      <p>Mon parcours s'appuie sur deux expériences clés : un stage formateur chez <strong>Digital Show</strong>, où j’ai participé à la création de plusieurs sites web, et mon alternance actuelle en tant que développeur Front-end chez <strong>Speedy</strong>. Ce double ancrage professionnel, que je complète par le développement de projets personnels, m'a permis de bâtir des bases techniques solides dans la conception et l'optimisation d'interfaces.</p>
+      <p>Au-delà du code, ma sensibilité pour différentes formes d'art nourrit ma créativité et renforce mon attrait pour le Front-end, un domaine où le visuel et l'expérience utilisateur occupent une place centrale.</p>
+      <p>Outre mes projets personnels et professionnels, j’adopte une démarche proactive : dès que je repère des sites internet perfectibles, comme ceux de restaurants locaux ou d'entrepreneurs indépendants, je prends l'initiative de les contacter pour leur proposer d'optimiser leur interface et de fluidifier leur navigation.</p>
+      <p>Mon objectif est d'allier rigueur technique, autonomie et créativité au sein d'environnements exigeants, afin de continuer à concevoir des solutions web performantes et adaptées aux besoins réels.</p>
+    </div>
+  </div>
+
+  <div id="modal-parcours" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Parcours & Cursus</h2>
+      <div class="parcours-list">
+        <div class="parcours-item">
+          <span class="parcours-date">2024 - 2027</span>
+          <div class="parcours-details">
+            <h3>BUT Informatique en alternance</h3>
+            <p><strong>Université Sorbonne Paris Nord</strong> - Villetaneuse</p>
+            <p>Formation axée sur le développement logiciel, la gestion de données et l'ingénierie web. Parcours réalisé en apprentissage en tant que <strong>Développeur Front-end</strong> chez <strong>Speedy</strong> (Nanterre), où j'interviens sur la maintenance d'applications internes et l'optimisation d'interfaces.</p>
+          </div>
+        </div>
+
+        <div class="parcours-item">
+          <span class="parcours-date">2022</span>
+          <div class="parcours-details">
+            <h3>Baccalauréat Général</h3>
+            <p><strong>Lycée Georges Sand</strong> - Domont</p>
+            <p>Obtenu avec Mention Assez Bien. Spécialités Mathématiques, Physique-Chimie et NSI (Numérique et Sciences Informatiques).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-langues" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Langues</h2>
+      <p><strong>Français :</strong> Le français est ma langue maternelle.</p>
+      <p><strong>Anglais :</strong> Je maîtrise également l'anglais tant à l'écrit qu'à l'oral. Mon utilisation quotidienne de cette langue pour la veille technique, la documentation et tout type de divertissement me permet de converser et de comprendre un interlocuteur natif sans difficulté.</p>
+      <p><strong>Espagnol :</strong> Je possède les bases suffisantes pour comprendre des textes simples ou formuler des réponses élémentaires.</p>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
