@@ -1,64 +1,78 @@
-document.addEventListener("DOMContentLoaded", () => {
-  fetch('projets.txt')
-    .then(response => {
-      if (!response.ok) {
-        throw new Error("Erreur de chargement");
-      }
-      return response.json();
-    })
-    .then(projets => {
-      const container = document.getElementById('projects-container');
-      // On cible le conteneur de la section pour y injecter les modales
-      const sectionContainer = container.closest('.section-container');
-      
-      let cardsHtml = '';
-      let modalsHtml = '';
+document.addEventListener('DOMContentLoaded', () => {
 
-      projets.forEach(projet => {
-        cardsHtml += `
-          <div class="project-card" onclick="openModal('${projet.id}')">
-            <h3>${projet.titre}</h3>
-            <div class="date">${projet.date}</div>
-            <img src="${projet.image}" alt="${projet.titre}" onerror="this.src='https://via.placeholder.com/400x200'">
-            <p>${projet.descriptionCourte}</p>
-          </div>
-        `;
+  const bentoCards = document.querySelectorAll('.bento-card[data-modal]');
+  const closeBtns = document.querySelectorAll('.modal .close');
 
-        modalsHtml += `
-          <div class="modal" id="${projet.id}">
-            <div class="modal-content">
-              <span class="close" onclick="closeModal('${projet.id}')">&times;</span>
-              <h3>${projet.titre}</h3>
-              <p>${projet.descriptionLongue}</p>
-            </div>
-          </div>
-        `;
-      });
-      
-      container.innerHTML = cardsHtml;
-      
-      if (sectionContainer) {
-        sectionContainer.insertAdjacentHTML('beforeend', modalsHtml);
+  bentoCards.forEach(card => {
+    card.addEventListener('click', () => {
+      const modalId = card.getAttribute('data-modal');
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        modal.style.display = 'block';
       }
-    })
-    .catch(error => {
-      console.error(error);
     });
-});
+  });
 
-function openModal(id) {
-  document.getElementById(id).style.display = "block";
-}
+  closeBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const modal = btn.closest('.modal');
+      if (modal) {
+        modal.style.display = 'none';
+      }
+    });
+  });
 
-function closeModal(id) {
-  document.getElementById(id).style.display = "none";
-}
-
-window.onclick = function(event) {
-  const modals = document.querySelectorAll('.modal');
-  modals.forEach(modal => {
-    if (event.target === modal) {
-      modal.style.display = "none";
+  window.addEventListener('click', (e) => {
+    if (e.target.classList.contains('modal')) {
+      e.target.style.display = 'none';
     }
   });
-}
+
+
+  let activeIndex = 0;
+  const cards = document.querySelectorAll('.category-card');
+  const prevBtn = document.getElementById('prevSkillBtn');
+  const nextBtn = document.getElementById('nextSkillBtn');
+
+  function updateCarousel() {
+    cards.forEach((card) => {
+      const cardIndex = parseInt(card.getAttribute('data-index'), 10);
+      card.classList.remove('state-center', 'state-left', 'state-right');
+
+      if (cardIndex === activeIndex) {
+        card.classList.add('state-center');
+      } else if (cardIndex === (activeIndex - 1 + cards.length) % cards.length) {
+        card.classList.add('state-left');
+      } else {
+        card.classList.add('state-right');
+      }
+    });
+  }
+
+  cards.forEach(card => {
+    card.addEventListener('click', () => {
+      const cardIndex = parseInt(card.getAttribute('data-index'), 10);
+      if (cardIndex !== activeIndex) {
+        activeIndex = cardIndex;
+        updateCarousel();
+      }
+    });
+  });
+
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      activeIndex = (activeIndex - 1 + cards.length) % cards.length;
+      updateCarousel();
+    });
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      activeIndex = (activeIndex + 1) % cards.length;
+      updateCarousel();
+    });
+  }
+
+  updateCarousel();
+});
