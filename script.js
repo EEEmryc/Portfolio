@@ -77,12 +77,16 @@ document.addEventListener('DOMContentLoaded', () => {
   updateCarousel();
 
 
-  // CHARGEMENT DYNAMIQUE DEPUIS projet.txt
   const projectsContainer = document.getElementById('projects-container');
 
   if (projectsContainer) {
-    fetch('projet.txt')
-      .then(response => response.json())
+    fetch('./projet.txt')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error("Erreur de chargement du fichier projet.txt");
+        }
+        return response.json();
+      })
       .then(projects => {
         projectsContainer.innerHTML = projects.map(project => `
           <div class="bento-card">
@@ -100,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `).join('');
       })
       .catch(error => {
-        console.error("Erreur lors du chargement des projets :", error);
+        console.error("Erreur :", error);
       });
   }
 
